@@ -6,18 +6,17 @@ import logo from "../utils/andrzul_logo.svg";
 const StyledLink = styled(Link)({
   textDecoration: "none",
   color: "inherit",
-  fontSize: "22px",
+  fontSize: { sm: 18, md: 24 },
   margin: 0,
   height: "auto",
 });
 
 function Appbar() {
   return (
-    <Box>
-      <AppBar>
+    <div>
+      <AppBar position="fixed">
         <Toolbar
           sx={{ flexWrap: "wrap", gap: "30px", maxHeight: "300px" }}
-          gap={3}
           variant="regular"
         >
           <Stack
@@ -27,7 +26,7 @@ function Appbar() {
             p={2}
             alignItems="center"
           >
-            <Link href="/" styl>
+            <Link href="/">
               <img
                 style={{ height: "60px", top: "4px", position: "relative" }}
                 src={logo}
@@ -59,7 +58,7 @@ function Appbar() {
           </Button>
         </Toolbar>
       </AppBar>
-    </Box>
+    </div>
   );
 }
 
