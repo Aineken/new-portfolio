@@ -1,13 +1,9 @@
-import AppBar from "./Components/AppBar";
-import MainPage from "./Components/MainPage";
+import Header from "./Components/Header/Header";
 
 function App() {
   return (
     <>
-      <AppBar />
-      <MainPage />
-
-      <MainPage />
+      <Header />
     </>
   );
 }
