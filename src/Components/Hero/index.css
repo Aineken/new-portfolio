@@ -1,0 +1,65 @@
+.circles {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  perspective: 50000px;
+  color: #61dafb;
+}
+
+.circles span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  background: currentColor;
+  width: 18.4%;
+  height: 18.4%;
+  border-radius: 50%;
+}
+
+.circles div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 13.32px solid;
+  border-right: 5.123076px solid;
+  border-color: 13.32px transparent;
+  border-radius: 100%;
+}
+
+.circles div:nth-child(1) {
+  animation: anim-1 4s linear infinite;
+}
+.circles div:nth-child(2) {
+  animation: anim-2 4s linear infinite;
+}
+.circles div:nth-child(3) {
+  animation: anim-3 4s linear infinite;
+}
+
+@keyframes anim-1 {
+  from {
+    transform: rotateZ(120deg) rotateX(66deg) rotateZ(0);
+  }
+  to {
+    transform: rotateZ(120deg) rotateX(66deg) rotateZ(360deg);
+  }
+}
+
+@keyframes anim-2 {
+  from {
+    transform: rotateZ(240deg) rotateX(66deg) rotateZ(0);
+  }
+  to {
+    transform: rotateZ(240deg) rotateX(66deg) rotateZ(360deg);
+  }
+}
+@keyframes anim-3 {
+  from {
+    transform: rotateZ(360deg) rotateX(66deg) rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg) rotateX(66deg) rotateZ(360deg);
+  }
+}
