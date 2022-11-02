@@ -1,59 +1,50 @@
 import {
-  Toolbar,
-  Typography,
-  AppBar,
-  Button,
-  Link,
-  Stack,
-} from "@mui/material";
-import { StyledLink } from "./HeaderStyled";
-
+  Container,
+  Div1,
+  Div2,
+  Div3,
+  NavLink,
+  SocialIcons,
+} from "./HeaderStyled";
+import { GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 import logo from "../../utils/andrzul_logo.svg";
 
 function Header() {
   return (
-    <AppBar position="fixed">
-      <Toolbar
-        sx={{ flexWrap: "wrap", gap: "30px", maxHeight: "300px" }}
-        variant="regular"
-      >
-        <Stack
-          sx={{ flexGrow: 1 }}
-          direction="row"
-          justify="center"
-          p={2}
-          alignItems="center"
+    <Container>
+      <Div1>
+        <NavLink white href="#">
+          <img
+            src={logo}
+            alt="Logo"
+            style={{ marginRight: "1rem", maxWidth: "100px", width: "100%" }}
+          />
+
+          <span>Ayan Zhambekov</span>
+        </NavLink>
+      </Div1>
+      <Div2>
+        <NavLink href="#project">Project</NavLink>
+
+        <NavLink href="#tech">Technologies</NavLink>
+
+        <NavLink href="#about">About</NavLink>
+      </Div2>
+      <Div3>
+        <SocialIcons href="https://github.com/Aineken" target="_blank">
+          <GitHub sx={{ fontSize: "3rem" }} />
+        </SocialIcons>
+        <SocialIcons
+          href="https://www.linkedin.com/in/ayan-zhambekov-893091161/"
+          target="_blank"
         >
-          <Link href="/">
-            <img
-              style={{ height: "60px", top: "4px", position: "relative" }}
-              src={logo}
-              alt=""
-            />
-          </Link>
-
-          <Typography
-            fontWeight="regular "
-            pl={3}
-            variant="h5"
-            color="inherit"
-            noWrap
-          >
-            Ayan Zhambekov
-          </Typography>
-        </Stack>
-
-        <StyledLink href="#">Projects</StyledLink>
-        <StyledLink href="#">Technologies</StyledLink>
-        <StyledLink href="#">About</StyledLink>
-
-        <Button href="#" color="inherit" variant="outlined">
-          <Typography variant="h6" fontWeight="bold">
-            Sign Up!
-          </Typography>
-        </Button>
-      </Toolbar>
-    </AppBar>
+          <LinkedIn sx={{ fontSize: "3rem" }} />
+        </SocialIcons>
+        <SocialIcons href="https://www.instagram.com/andrzul/" target="_blank">
+          <Instagram sx={{ fontSize: "3rem" }} />
+        </SocialIcons>
+      </Div3>
+    </Container>
   );
 }
 
