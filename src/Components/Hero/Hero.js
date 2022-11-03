@@ -5,9 +5,9 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
-import BackgroundAnimation from "./BackgroundAnimation";
-import { LeftSection } from "./HeroStyled";
-// import ReactAnimations from "./ReactAnimations";
+// import BackgroundAnimation from "./BackgroundAnimation";
+import { LeftSection, RightSection } from "./HeroStyled";
+import ReactAnimations from "./ReactAnimations";
 
 function Hero() {
   const [loopNum, setLoopNum] = useState(0);
@@ -16,9 +16,9 @@ function Hero() {
   const toRotate = ["Developer", "Designer", "Creator"];
 
   useEffect(() => {
-    let ticker = setInterval(() => {
+    const ticker = setInterval(() => {
       tick();
-    }, 500);
+    }, 135);
 
     return () => {
       clearInterval(ticker);
@@ -32,34 +32,31 @@ function Hero() {
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
     setText(updateText);
-    if (isDeleting) {
-    }
     if (!isDeleting && updateText === fullText) {
       setIsDeleting(true);
     } else if (isDeleting && updateText === "") {
       setIsDeleting(false);
-      setLoopNum(loopNum + 1);
+      setLoopNum((prev) => prev + 1);
     }
   };
+
   return (
-    <Section grid>
-      <Section row nopadding>
-        <LeftSection>
-          <SectionTitle main center>
-            Welcome To <br />
-            My Personal Portfolio
-          </SectionTitle>
-          <SectionTitle>Web+{text}</SectionTitle>
-          <SectionText>
-            My main purpose is to help aspiring and established developers to
-            take their development skills to the next level and build awesome
-            apps.
-          </SectionText>
-          <Button onClick={() => {}}>Learn More</Button>
-        </LeftSection>
-      </Section>
-      {/* <ReactAnimations /> */}
-      <BackgroundAnimation />
+    <Section>
+      <LeftSection>
+        <SectionTitle main center>
+          Ayan Zhambekov
+          <br />
+          I'm Web{` ${text}`}
+        </SectionTitle>
+        <SectionText>
+          My main purpose is to help aspiring and established developers to take
+          their development skills to the next level and build awesome apps.
+        </SectionText>
+        <Button onClick={() => {}}>Contact Me</Button>
+      </LeftSection>
+      <RightSection>
+        <ReactAnimations />
+      </RightSection>
     </Section>
   );
 }

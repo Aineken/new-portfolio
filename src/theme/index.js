@@ -9,12 +9,12 @@ export default {
   colors: {
     primary1: "#FD841F",
     background1: "#4158d0",
-    accent1: "#E14D2A",
+    accent1: "#F6F6C9",
     button: "#001253",
   },
   // Breakpoints for responsive design
   breakpoints: {
-    sm: "screen and (max-width: 640px)",
+    sm: "screen and (max-width: 580px)",
     md: "screen and (max-width: 768px)",
     lg: "screen and (max-width: 1024px)",
     xl: "screen and (max-width: 1280px)",

@@ -10,7 +10,7 @@ export const Container = styled.div`
 
   @media ${(props) => props.theme.breakpoints.md} {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 200px repeat(4, 1fr);
     grid-template-rows: repeat(2, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
@@ -21,10 +21,12 @@ export const Div1 = styled.div`
   display: flex;
   grid-area: 1/1/2/2;
   flex-direction: row;
-  align-content: center;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.md} {
-    grid-area: 1 / 1 / 2 / 4;
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-area: 1 / 1 / 2 / 3;
   }
 `;
 
@@ -46,8 +48,9 @@ export const Div3 = styled.div`
   justify-content: space-around;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.md} {
+    justify-content: space-between;
     align-items: center;
-    grid-area: 1 / 4 / 2 / 6;
+    grid-area: 1 / 3 / 2 / 6;
   }
 `;
 
@@ -66,11 +69,13 @@ export const SocialIcons = styled.a`
 
 // Navigation Links
 export const NavLink = styled.a`
-  font-size: 2rem;
+  font-size: ${(props) => (props.main ? "2.5rem" : "2rem")};
+  font-weight: ${(props) => (props.main ? "500" : null)};
   line-height: 32px;
   display: flex;
   width: 100%;
-  justify-content: center;
+
+  justify-content: ${(props) => (props.left ? "start" : "center")};
   align-items: center;
   color: ${(props) => (props.white ? "#fff" : "rgba(255, 255, 255, 0.75)")};
   transition: 0.4s ease;
