@@ -4,25 +4,21 @@ import emailjs from "@emailjs/browser";
 export default function ContactForm() {
   const form = useRef();
 
+  const VAR1 = process.env.VAR1;
+  const VAR2 = process.env.VAR2;
+  const VAR3 = process.env.VAR3;
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_jj3zv1p",
-        "template_7dfkr36",
-        form.current,
-        "m3FaR6dW3c60Jtd-S"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          console.log("Your email has been sent successfully");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(VAR1, VAR2, form.current, VAR3).then(
+      (result) => {
+        console.log(result.text);
+        console.log("Your email has been sent successfully");
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
 
   return (

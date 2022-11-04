@@ -9,6 +9,7 @@ import Projects from "./components/Projects/Projects";
 import Technoligies from "./components/Technologies/Technoligies";
 
 function App() {
+  console.log(process.env);
   return (
     <>
       <Container nopadding>
