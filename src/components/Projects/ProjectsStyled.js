@@ -40,6 +40,18 @@ export const CardImg = styled.img`
   width: 100%;
   height: 30%;
   object-fit: cover;
+  ::selection {
+    background: transparent;
+  }
+  ::-moz-selection {
+    background: transparent;
+  }
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 `;
 export const CardInfo = styled.p`
   width: 100%;

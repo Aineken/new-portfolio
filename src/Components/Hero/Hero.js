@@ -5,7 +5,6 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
-// import BackgroundAnimation from "./BackgroundAnimation";
 import { LeftSection, RightSection } from "./HeroStyled";
 import ReactAnimations from "./ReactAnimations";
 

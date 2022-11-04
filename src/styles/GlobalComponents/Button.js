@@ -3,10 +3,10 @@ import React from "react";
 import { ButtonBack, ButtonFront } from "./index";
 
 const Button = (props) => (
-  <ButtonBack alt={props.alt} form={props.form} disabled={props.disabled}>
+  <ButtonBack alter={props.alter} form={props.form} disabled={props.disabled}>
     {props.children}
     <ButtonFront
-      alt={props.alt}
+      alter={props.alter}
       onClick={props.onClick}
       disabled={props.disabled}
     >

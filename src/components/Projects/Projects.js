@@ -41,8 +41,22 @@ function Projects() {
                 </TagList>
               </StackInfo>
               <CardButtons>
-                <Button alt>Code</Button>
-                <Button alt>Visit</Button>
+                <Button
+                  onClick={() =>
+                    window.open(`${project.source}`, "resizable=yes")
+                  }
+                  alter
+                >
+                  Code
+                </Button>
+                <Button
+                  onClick={() =>
+                    window.open(`${project.visit}`, "resizable=yes")
+                  }
+                  alter
+                >
+                  Visit
+                </Button>
               </CardButtons>
             </Card>
           );

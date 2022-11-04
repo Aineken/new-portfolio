@@ -16,6 +16,18 @@ export const RightSection = styled.div`
   justify-content: end;
   align-items: center;
   margin-right: 96px;
+  ::selection {
+    background: transparent;
+  }
+  ::-moz-selection {
+    background: transparent;
+  }
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     position: relative;
