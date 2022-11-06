@@ -15,14 +15,11 @@ export const Card = styled.div`
 `;
 
 export const CardTitle = styled.h3`
-  color: white;
   font-weight: 700;
   font-size: 30px;
   line-height: 34px;
   letter-spacing: 0.02em;
   display: flex;
-
-  color: white;
   align-items: flex-start;
   /* -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */

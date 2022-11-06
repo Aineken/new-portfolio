@@ -61,11 +61,7 @@ export const CarouselItemTitle = styled.h4`
   line-height: 34px;
   letter-spacing: 0.02em;
   display: flex;
-  /* background: white; */
-  color: white;
   align-items: center;
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   margin-bottom: 8px;
 
   @media ${(props) => props.theme.breakpoints.md} {

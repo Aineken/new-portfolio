@@ -38,7 +38,6 @@ export const ListItems = styled.div`
 export const ListTitle = styled.p`
   font-weight: ${(props) => (props.regular ? "regular" : "700")};
   font-size: 18px;
-  color: white;
   line-height: 28px;
 `;
 

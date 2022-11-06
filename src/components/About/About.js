@@ -62,7 +62,7 @@ function About() {
     window.addEventListener("resize", handleResize);
   }, []);
   return (
-    <Section>
+    <Section id="about">
       <SectionTitle>About</SectionTitle>
       <SectionText>
         The reason of my work is to assist aspiring and set up designers to

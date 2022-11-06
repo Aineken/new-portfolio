@@ -15,7 +15,7 @@ function App() {
       <Container nopadding>
         <Header />
         <Hero />
-        <ContactForm />
+        {/* <ContactForm /? */}
         <Projects />
         <Technoligies />
         <About />
