@@ -12,7 +12,7 @@ import {
 
 function Footer() {
   return (
-    <Container>
+    <Container id="footer">
       <LinkLists>
         <ListItems>
           <ListTitle>PHONE</ListTitle>

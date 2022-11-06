@@ -8,7 +8,7 @@ import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection, RightSection } from "./HeroStyled";
 import ReactAnimations from "./ReactAnimations";
 
-function Hero() {
+function Hero({ setShowModal }) {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -40,23 +40,28 @@ function Hero() {
   };
 
   return (
-    <Section>
-      <LeftSection>
-        <SectionTitle main center>
-          Ayan Zhambekov
-          <br />
-          I'm Web{` ${text}`}
-        </SectionTitle>
-        <SectionText>
-          My main purpose is to help aspiring and established developers to take
-          their development skills to the next level and build awesome apps.
-        </SectionText>
-        <Button onClick={() => {}}>Contact Me</Button>
-      </LeftSection>
-      <RightSection>
-        <ReactAnimations />
-      </RightSection>
-    </Section>
+    <>
+      <Section id="/">
+        <LeftSection>
+          <SectionTitle main center>
+            Ayan Zhambekov
+            <br />
+            I'm Web{` ${text}`}
+          </SectionTitle>
+          <SectionText>
+            My main purpose is to help aspiring and established developers to
+            take their development skills to the next level and build awesome
+            apps.
+          </SectionText>
+          <a href="#footer">
+            <Button>Contact Me</Button>
+          </a>
+        </LeftSection>
+        <RightSection>
+          <ReactAnimations />
+        </RightSection>
+      </Section>
+    </>
   );
 }
 

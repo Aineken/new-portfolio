@@ -5,6 +5,8 @@ export const LeftSection = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 `;
 
 export const RightSection = styled.div`
@@ -16,6 +18,7 @@ export const RightSection = styled.div`
   justify-content: end;
   align-items: center;
   margin-right: 96px;
+  z-index: -1;
   ::selection {
     background: transparent;
   }

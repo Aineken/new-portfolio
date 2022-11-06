@@ -6,7 +6,7 @@ export const projects = [
     image: "/images/1.png",
     tags: ["Mongo", "Express", "React", "Node"],
     source: "https://google.com",
-    visit: "https://google.com",
+    visit: "https://andrzul-memories.netlify.app/",
     id: 0,
   },
   {
@@ -19,32 +19,12 @@ export const projects = [
     visit: "https://google.com",
     id: 1,
   },
-  {
-    title: "WebRTC App",
-    description:
-      "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-    image: "/images/3.jpg",
-    tags: ["React", "WebRTC", "React", "WebRTC", "React", "WebRTC"],
-    source: "https://google.com",
-    visit: "https://google.com",
-    id: 2,
-  },
-  {
-    title: "Unichat",
-    description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    image: "/images/4.jpg",
-    tags: ["React", "ChatEngine", "Firebase"],
-    source: "https://google.com",
-    visit: "https://google.com",
-    id: 3,
-  },
 ];
 
 export const TimeLineData = [
-  { year: "2018/Mar", month: "jul", text: "Started my journey" },
-  { year: "2019/Feb", month: "jul", text: "Worked as a freelance developer" },
-  { year: "2020/Feb", month: "jul", text: "Founded Andrzul Web Studio" },
-  { year: "2021/Feb", month: "jul", text: "Shared my projects with the world" },
-  { year: "2022/Feb", month: "jul", text: "Started my own platform" },
+  { year: "2020/Dec", text: "Started my journey" },
+  { year: "2021/Mar", text: "Worked as a freelance developer" },
+  { year: "2022/Feb", text: "Founded Andrzul Web Studio" },
+  { year: "2022/Sep", text: "Shared my projects with the world" },
+  { year: "2022/Oct", text: "Started my own platform" },
 ];
