@@ -10,7 +10,7 @@ import {
   LogoContainer,
 } from "./FooterStyled";
 
-function Footer() {
+function FooterMain() {
   return (
     <Container id="footer">
       <LinkLists>
@@ -47,4 +47,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default FooterMain;

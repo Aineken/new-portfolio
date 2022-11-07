@@ -1,6 +1,6 @@
 import About from "./components/About/About";
 import Achievements from "./components/Achievements/Achievements";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/FooterMain";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
