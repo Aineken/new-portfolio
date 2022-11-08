@@ -6,7 +6,6 @@ import {
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection, RightSection } from "./HeroStyled";
-import ReactAnimations from "./ReactAnimations";
 
 function Hero({ setShowModal }) {
   const [loopNum, setLoopNum] = useState(0);
@@ -50,16 +49,20 @@ function Hero({ setShowModal }) {
             I'm Web{` ${text}`}
           </SectionTitle>
           <SectionText>
-            My main purpose is to help aspiring and established developers to
-            take their development skills to the next level and build awesome
-            apps.
+            I am Full Stack Developer Based in Warsaw,Poland. I have developed
+            many applications Front-end to Back-end.
           </SectionText>
           <a href="#footer">
             <Button>Contact Me</Button>
           </a>
         </LeftSection>
         <RightSection>
-          <ReactAnimations />
+          <div className="circles">
+            <div></div>
+            <div></div>
+            <div></div>
+            <span></span>
+          </div>
         </RightSection>
       </Section>
     </>
