@@ -1,17 +1,11 @@
 import React from "react";
+import { data } from "../../constants/constants";
 import {
   Section,
   SectionDivider,
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { Box, Card, CardText, CardTitle } from "./AchievementsStyled";
-
-const data = [
-  { number: 390, text: "Instagram Followers" },
-  { number: 5, text: "Friends" },
-  { number: 1, text: "Lovely hobby" },
-  { number: 5000, text: "Reason to remember my Name" },
-];
 
 function Achievements() {
   return (

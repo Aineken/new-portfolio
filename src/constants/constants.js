@@ -10,13 +10,13 @@ export const projects = [
     id: 0,
   },
   {
-    title: "Basic Calculator",
+    title: "Posts Dashboard",
     description:
-      "I was praticing my React skills creating Basic Calculator fully functional and learned many other advanced React & JavaScript topics.",
-    image: "/images/2.png",
-    tags: ["React", "JavaScript"],
-    source: "https://github.com/Aineken/basic-calculator",
-    visit: "https://andrzul-calculator.netlify.app/",
+      "Using React i have created dashboard with CRUD function as well as auto generating id for x amount of users, also i have added sorting function from A-Z and Z-A for usernames as well as no sorting mode.",
+    image: "/images/5.png",
+    tags: ["React", "RESTapi", "Dinamic ID", "CRUD"],
+    source: "https://github.com/Aineken/new-work-template",
+    visit: "https://andrzul-proexe.netlify.app",
     id: 1,
   },
   {
@@ -29,6 +29,17 @@ export const projects = [
     visit: "https://andrzul-youtube.netlify.app",
     id: 2,
   },
+  {
+    title: "Basic Calculator",
+    description:
+      "I was praticing my React skills creating Basic Calculator fully functional and learned many other advanced React & JavaScript topics.",
+    image: "/images/2.png",
+    tags: ["React", "JavaScript"],
+    source: "https://github.com/Aineken/basic-calculator",
+    visit: "https://andrzul-calculator.netlify.app",
+    id: 1,
+  },
+
   {
     title: "Quote Machine",
     description:
@@ -47,4 +58,11 @@ export const TimeLineData = [
   { year: "2022/Feb", text: "Founded Andrzul Web Studio" },
   { year: "2022/Sep", text: "Shared my projects with the world" },
   { year: "2022/Oct", text: "Started my own platform" },
+];
+
+export const data = [
+  { number: 390, text: "Instagram Followers" },
+  { number: 5, text: "Friends" },
+  { number: 1, text: "Lovely hobby" },
+  { number: 5000, text: "Reason to remember my Name" },
 ];

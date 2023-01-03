@@ -37,7 +37,7 @@ function Header() {
           <FaGithub size="3rem" />
         </SocialIcons>
         <SocialIcons
-          href="https://www.linkedin.com/in/ayan-zhambekov-893091161/"
+          href="https://www.linkedin.com/in/andrzul/"
           target="_blank"
         >
           <FaLinkedin size="3rem" />
