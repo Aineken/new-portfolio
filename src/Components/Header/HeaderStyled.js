@@ -5,8 +5,8 @@ export const Container = styled.div`
   grid-template-columns: 320px repeat(4, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
-  padding: 1rem;
-  padding-top: 2rem;
+  padding: 2rem;
+  padding-top: 4rem;
 
   @media ${(props) => props.theme.breakpoints.md} {
     display: grid;
@@ -86,12 +86,26 @@ export const NavLink = styled.a`
   align-items: center;
   color: ${(props) => (props.white ? "#fff" : "rgba(255, 255, 255, 0.75)")};
   transition: 0.4s ease;
+
   &:hover {
     color: #fff;
     opacity: 1;
     cursor: pointer;
   }
+
+  img {
+    margin-right: 1rem;
+    max-width: 150px;
+    width: 100%;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.5rem;
+    
+    img {
+      margin-right: 0.5rem;
+      max-width: 100px;
+      width: 100%;
+    }
   }
 `;

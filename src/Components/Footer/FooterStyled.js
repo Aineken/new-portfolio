@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: block;
   width: calc(100vw - 96px);
-  max-width: 1040px;
+  max-width: 1240px;
   padding: 36px 48px 40px;
   margin: 1rem auto;
   box-sizing: content-box;
