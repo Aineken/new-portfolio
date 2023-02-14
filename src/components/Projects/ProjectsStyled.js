@@ -38,7 +38,7 @@ export const HR = styled.hr`
 
 export const CardImg = styled.img`
   width: 100%;
-  height: 30%;
+  height: 200px;
   object-fit: cover;
   ::selection {
     background: transparent;
@@ -84,7 +84,7 @@ export const Tag = styled.li`
 export const CardButtons = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 10px 5px;
+  padding: 0 20px 20px;
   gap: 30px;
 `;
 export const CardButton = styled.button`

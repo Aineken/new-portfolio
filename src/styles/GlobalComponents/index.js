@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const Container = styled.div`
-  max-width: 1280px;
+  max-width: 1400px;
   width: 100%;
   margin: auto;
 `;
@@ -10,7 +10,8 @@ export const Section = styled.section`
   flex-direction: ${(props) => (props.row ? "row" : "column")};
   padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
   margin: 0 auto;
-  max-width: 1040px;
+  width: 100%;
+  max-width: 1240px;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
@@ -104,7 +105,7 @@ export const SectionDivider = styled.div`
 export const ButtonBack = styled.div`
   width: ${({ alter }) => (alter ? "150px" : "262px")};
   height: ${({ alter }) => (alter ? "52px" : "64px")};
-  border-radius: 50px;
+  border-radius: 10px;
   font-size: ${({ alter }) => (alter ? "20px" : "24px")};
   font-weight: 600;
   display: flex;
@@ -139,7 +140,7 @@ export const ButtonBack = styled.div`
 
 export const ButtonFront = styled.button`
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   color: #fff;
   display: flex;
   position: absolute;
